@@ -1,4 +1,5 @@
 #include "catch.hpp"
+#include <iostream>
 
 // Zad2
 // tutaj definicja klasy Makaron
@@ -9,7 +10,6 @@
 class Tagliatelle
 {
   public:
-  
     double get_L() { return L; }
     double get_W() { return W; }
     double get_R() { return R; }
@@ -17,10 +17,9 @@ class Tagliatelle
     void set_L(const double& l) {L = l;}
     void set_W(const double& w) {W = w;}
     void set_R(const double& r) {R = r;}
-  
-    Tagliatelle(double l,double w,double r) : L(l), W(w), R(r){}
-    Tagliatelle() : L(0.5), W(0.5), R(0.5) {}
-    virtual double ileMaki(unsigned P) const override
+    Tagliatelle(double l,double w,double r) : L(l), W(w), R(r) {}
+    Tagliatelle(): L(0.5), W(0.5), R(0.5) {}
+    virtual double ileMaki(unsigned P) const
     {
       return P * L * W * (1. - R) * C;
     }
