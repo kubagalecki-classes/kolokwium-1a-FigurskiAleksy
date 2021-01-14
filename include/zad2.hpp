@@ -21,6 +21,6 @@ Makaron* Makaron::gotujMakaron(const std::string& s)
   }
   else
   {
-    reurn new Penne();
+    return new Penne();
   }
 }
