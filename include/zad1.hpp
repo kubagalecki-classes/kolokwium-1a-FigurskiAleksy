@@ -24,6 +24,7 @@ class Tagliatelle : public Makaron
     void set_L(const double& l) {L = l;}
     void set_W(const double& w) {W = w;}
     void set_R(const double& r) {R = r;}
+    
     Tagliatelle(double l,double w,double r) : L(l), W(w), R(r) {}
     Tagliatelle(): L(0.5), W(0.5), R(0.5) {}
     virtual double ileMaki(unsigned P) const override
