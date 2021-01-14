@@ -28,5 +28,5 @@ class Tagliatelle
     double L;
     double W;
     double R;
-    const double C;
+    static const double C;
 };
